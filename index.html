@@ -23,12 +23,7 @@
         <div class="content">
             <section class="posts">
                 <h2>Posts</h2>
-                <article class="post">
-                    <h3>Master's Thesis</h3>
-                    <p class="post-date">April 6, 2025</p>
-                    <p>This is my master's thesis. Check it out <a href="https://vtechworks.lib.vt.edu/items/f9c7c090-ecd5-4d00-8de2-522eaf4c3df4" target="_blank">here.</a>  </p>
-                </article>
-                <!-- Add more posts here as you create them -->
+                <!-- Posts will be dynamically inserted here -->
             </section>
         </div>
         <aside class="sidebar">
@@ -48,5 +43,19 @@
             <p>&copy; 2025 Jack Cross. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Template for post -->
+    <template id="post-template">
+        <article class="post">
+            <h3 class="post-title"></h3>
+            <p class="post-date"></p>
+            <div class="post-excerpt"></div>
+            <button class="view-more-btn">View More</button>
+        </article>
+    </template>
+
+    <!-- JavaScript -->
+    <script src="posts.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
