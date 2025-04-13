@@ -24,13 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Add event listener to button
             viewMoreBtn.addEventListener('click', function() {
-                if (post.externalLink) {
-                    // If it's an external link, open it in a new tab
-                    window.open(post.externalLink, '_blank');
-                } else {
-                    // Otherwise, open the full post in a new tab
-                    openFullPost(post);
-                }
+                // Always open the full post content in a new tab
+                openFullPost(post);
             });
             
             // Add the post to the page
@@ -41,6 +36,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to create and open a full post page
     function openFullPost(post) {
         // Create a new HTML document
+        let externalLinkHtml = '';
+        if (post.externalLink) {
+            externalLinkHtml = `<p><a href="${post.externalLink}" target="_blank">View original document</a></p>`;
+        }
+        
         const fullPostHTML = `
         <!DOCTYPE html>
         <html lang="en">
@@ -114,6 +114,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 code {
                     font-family: monospace;
                 }
+                .external-link {
+                    margin-top: 20px;
+                    padding-top: 10px;
+                    border-top: 1px solid #eaeaea;
+                }
             </style>
         </head>
         <body>
@@ -130,6 +135,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     <p class="post-date">${post.date}</p>
                     <div class="post-content">
                         ${post.content}
+                    </div>
+                    <div class="external-link">
+                        ${externalLinkHtml}
                     </div>
                     <a href="index.html" class="back-link">← Back to All Posts</a>
                 </article>
