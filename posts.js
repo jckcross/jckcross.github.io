@@ -7,33 +7,18 @@ const posts = [
         title: "Master's Thesis",
         date: "April 6, 2025",
         excerpt: "This is my master's thesis. Click 'View More' to check it out.",
-        content: "", // Empty because this post links to an external resource
+       content: `
+  <h1>Optimizing Reinforced Concrete Beam Performance Through Fiber Metal Laminate Retrofits</h1>
+  
+  <p>This research explores the application of fiber metal laminate (FML) as an innovative retrofit solution for reinforced concrete (RC) beams. FML combines alternating layers of metal and fiber-reinforced polymer (FRP) composites through a polymeric matrix, addressing the brittle failure limitations of traditional FRP retrofits while maintaining strength benefits.</p>
+  
+  <p>Seven RC beams were tested under four-point bending conditions: four with FML retrofits, two with FRP retrofits, and one control specimen. The study evaluated different configurations, focusing on identifying retrofits that enhanced load capacity without compromising ductility. To prevent premature debonding failures, the research examined hybrid bonding and unbonded anchorage systems, with four beams using hybrid bonded configurations and two using unbonded anchorage.</p>
+  
+  <p>Analytical models were developed to predict beam behavior with various retrofit configurations. For fully bonded retrofits, the established ACI 440.2R-17 method was applied, while a novel analytical procedure was created for unbonded retrofits due to their lack of strain compatibility.</p>
+  
+  <p>Results confirmed FML's effectiveness as a retrofit material, with performance significantly influenced by fiber orientation. Beams with fully bonded, unidirectional fibers demonstrated maximum strength gains but reduced ductility, while those with fully bonded, off-axis fibers achieved moderate strength increases while maintaining ductility. Unbonded retrofits successfully improved both strength and ductility, performing comparably to fully bonded retrofits with similar fiber orientation.</p>
+  
+  <p>This investigation validates FML as a promising retrofit material offering an optimal balance between strength enhancement and ductility, with fiber orientation and bonding methods being critical factors in retrofit performance optimization.</p>
+`,
         externalLink: "https://vtechworks.lib.vt.edu/items/f9c7c090-ecd5-4d00-8de2-522eaf4c3df4"
-    },
-    {
-        id: 'sample-post',
-        title: "Sample Blog Post",
-        date: "April 13, 2025",
-        excerpt: "This is a sample blog post that demonstrates how you can add more content to your website.",
-        content: `
-            <p>This is a full blog post that demonstrates how you can add more detailed content to your website.</p>
-            
-            <p>You can include multiple paragraphs, <strong>formatting</strong>, and even <a href="#">links</a> in your content.</p>
-            
-            <h4>Subheadings are supported too</h4>
-            
-            <p>Structure your content however you like. You can add code samples, images, or any other HTML content here.</p>
-            
-            <pre><code>
-// Example code block
-function helloWorld() {
-    console.log("Hello, World!");
-}
-            </code></pre>
-            
-            <p>When you want to add a new post, simply add a new object to the posts array in the posts.js file.</p>
-        `,
-        externalLink: null
     }
-    // Add more posts here in the same format
-];
