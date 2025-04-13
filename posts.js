@@ -1,13 +1,12 @@
 // This file contains all of your posts data
 // Add new posts to this array when you want to add more content
-
 const posts = [
     {
         id: 'masters-thesis',
         title: "Master's Thesis",
         date: "April 6, 2025",
         excerpt: "This is my master's thesis. Click 'View More' to check it out.",
-       content: `
+        content: `
   <h1>Optimizing Reinforced Concrete Beam Performance Through Fiber Metal Laminate Retrofits</h1>
   
   <p>This research explores the application of fiber metal laminate (FML) as an innovative retrofit solution for reinforced concrete (RC) beams. FML combines alternating layers of metal and fiber-reinforced polymer (FRP) composites through a polymeric matrix, addressing the brittle failure limitations of traditional FRP retrofits while maintaining strength benefits.</p>
@@ -22,3 +21,4 @@ const posts = [
 `,
         externalLink: "https://vtechworks.lib.vt.edu/items/f9c7c090-ecd5-4d00-8de2-522eaf4c3df4"
     }
+];
